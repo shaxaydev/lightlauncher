@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">LightLauncher</string>
+    <string name="home">Главная</string>
+    <string name="applications">Приложения</string>
+    <string name="inputs">Входы</string>
+    <string name="settings">Настройки</string>
+    <string name="open">Открыть</string>
+    <string name="open_app">Открыть %1$s</string>
+    <string name="app_actions">Действия с приложением</string>
+    <string name="empty_favorites">Нет избранных приложений</string>
+    <string name="add_favorite">Добавить в избранное</string>
+    <string name="remove_favorite">Убрать из избранного</string>
+    <string name="move_earlier">Передвинуть раньше</string>
+    <string name="move_later">Передвинуть позже</string>
+    <string name="app_details">Об приложении</string>
+    <string name="close">Закрыть</string>
+    <string name="launch_error">Не удалось открыть. Проверь приложение в настройках ТВ.</string>
+    <string name="tv_inputs">Входы телевизора</string>
+    <string name="input_disconnected">%1$s · нет сигнала</string>
+    <string name="use_input_remote">Используй кнопку выбора входа на пульте</string>
+</resources>

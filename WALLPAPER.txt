@@ -1,0 +1,10 @@
+Generator: built-in ImageGen tool (not CLI/API fallback).
+Saved wallpaper: wallpaper.png
+Application asset: app/src/main/res/drawable-nodpi/console_wallpaper.png
+
+Use case: stylized-concept
+Asset type: fullscreen 16:9 wallpaper for a minimal television launcher inspired by the PlayStation 5 home screen, NOT a UI mockup.
+Primary request: a beautiful cinematic abstract wallpaper made of a single sweeping, softly luminous folded ribbon of dark smoked glass and satin silver, sculptural fluid layers and fine grazing highlights. Extremely refined and premium, restrained, elegant depth rather than busy ornament.
+Composition: 2048x1152 widescreen landscape. Entire left 45 percent and the uppermost 20 percent remain very dark with generous calm negative space for separate interface elements. The main flowing sculpture occupies the center-right and lower-right, curving diagonally across a midnight-black space; it extends off frame naturally. This is a background spanning the entire screen, not a floating card. Smooth tonal detail and atmospheric depth, a soft halo behind the ribbon, no tiny particles.
+Color palette: almost monochrome charcoal, silver, smoke and white, neutral highlights so the app can tint this wallpaper red, green, blue or purple. Rich black shadows, restrained luminous edges, no blown-out broad white areas.
+Constraints: no text, no letters, no logos, no icons, no interface, no device mockup, no frames, no boxes, no borders, no watermark. One coherent full-bleed wallpaper, no grid or collage.

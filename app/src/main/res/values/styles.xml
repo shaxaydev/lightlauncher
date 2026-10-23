@@ -1,0 +1,21 @@
+<resources>
+    <style name="AppTheme" parent="android:style/Theme.Material.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:colorAccent">#BED6FF</item>
+        <item name="android:windowBackground">#050A16</item>
+        <item name="android:alertDialogTheme">@style/DialogTheme</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="DialogTheme" parent="android:style/Theme.Material.Dialog.Alert">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:colorAccent">#BED6FF</item>
+        <item name="android:textColorPrimary">#ECF2FF</item>
+        <item name="android:textColorSecondary">#A6B9D3</item>
+        <item name="android:windowBackground">@drawable/dialog_background</item>
+        <item name="android:backgroundDimAmount">0.65</item>
+        <item name="android:listSelector">@drawable/menu_focus</item>
+    </style>
+</resources>
