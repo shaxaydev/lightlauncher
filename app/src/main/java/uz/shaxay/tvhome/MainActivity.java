@@ -9,6 +9,7 @@ import android.content.IntentFilter;
 import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.graphics.Typeface;
+import android.graphics.drawable.Drawable;
 import android.graphics.drawable.GradientDrawable;
 import android.graphics.drawable.StateListDrawable;
 import android.net.Uri;
@@ -195,6 +196,8 @@ public class MainActivity extends Activity {
             });
     TextView settings =
         button(getString(R.string.settings), () -> launch(new Intent(Settings.ACTION_SETTINGS)));
+    setButtonIcon(inputs, R.drawable.ic_input, 48);
+    setButtonIcon(settings, R.drawable.ic_settings, 48);
     header.addView(inputs, navButtonParams());
     header.addView(settings, navButtonParams());
     Collections.addAll(navButtons, favoritesTab, allTab, inputs, settings);
@@ -244,13 +247,14 @@ public class MainActivity extends Activity {
     bottom.addView(launchButton, new LinearLayout.LayoutParams(dp(190), -1));
     menuButton =
         button(
-            "•••",
+            "",
             () -> {
               if (lastPackage != null && catalog.contains(lastPackage)) appMenu(lastPackage);
             });
     menuButton.setContentDescription(getString(R.string.app_actions));
     menuButton.setGravity(Gravity.CENTER);
     styleButton(menuButton, 2);
+    setButtonIcon(menuButton, R.drawable.ic_more, 62);
     LinearLayout.LayoutParams menuParams = new LinearLayout.LayoutParams(dp(62), -1);
     menuParams.leftMargin = dp(14);
     bottom.addView(menuButton, menuParams);
@@ -302,6 +306,21 @@ public class MainActivity extends Activity {
               Color.WHITE,
               kind == 1 ? Color.rgb(12, 25, 46) : Color.rgb(167, 184, 209)
             }));
+  }
+
+  private void setButtonIcon(TextView button, int resource, int widthDp) {
+    if (button.length() > 0) button.setContentDescription(button.getText());
+    button.setText("");
+    button.setWidth(dp(widthDp));
+    button.setGravity(Gravity.CENTER);
+    // TextView anchors a start drawable to its padding, even with CENTER gravity.
+    int padding = (dp(widthDp) - dp(20)) / 2;
+    button.setPaddingRelative(padding, 0, padding, 0);
+    Drawable icon = getDrawable(resource).mutate();
+    icon.setBounds(0, 0, dp(20), dp(20));
+    icon.setTintList(button.getTextColors());
+    button.setCompoundDrawablePadding(0);
+    button.setCompoundDrawablesRelative(icon, null, null, null);
   }
 
   private void selectTab(boolean all) {
